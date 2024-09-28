@@ -1,0 +1,33 @@
+<div style="background-color: aquamarine;">
+  <h1 style="color: blue;">Interpolation</h1>
+<h1>hello  </h1>
+<h3>{{title}} : this is my title</h3>
+<h4> my obj {{obj.name}} </h4>
+<h4>my num value {{num}} </h4>
+<h4>{{arr}}</h4>
+<p>boolean :  {{isValid}}</p>
+
+<h1 style="color: green;">Property Binding</h1>
+</div>
+
+<input type="text" value="{{val1}}" [disabled]=wantToDisable>
+
+<div >
+  <h1 style="color: rgb(252, 166, 7);">Event Binding </h1>
+<button (click)="m1()" >Click me</button>
+</div>
+<br>
+<div class="mouseOver">
+  <p (mouseover)="mouseOver()">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, minus, quidem quis modi 
+  </p>
+</div>
+
+<br>
+
+<div class="box1" style="border: 2px solid yellowgreen;">
+  <h1 style="color: rgb(211, 24, 114);">Two way data Binding </h1>
+
+<input type="text" [(ngModel)]="myVal">
+<p>{{myVal}}</p>
+</div>
