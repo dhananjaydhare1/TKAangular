@@ -1,0 +1,23 @@
+<div class="form-group">
+  <label for="numberSelect"> Select  a Number </label>
+  <select id=" numberSelect" class="form-control" [(ngModel)] = "selectedNumber">
+
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+
+  </select>
+
+</div >
+<button (click)="printTable()">Print</button>
+<div *ngIf="multiplicationTable.length > 0">
+<h3>multiploication table for {{selectedNumber}}</h3>
+<ul>
+  <li *ngFor="let result of multiplicationTable"> {{result}}</li>
+  <br><br><br>
+  <!-- incomplete below code  -->
+  <li *ngFor="let table of ">{{table}}
+
+  </li>
+</ul>
+</div>

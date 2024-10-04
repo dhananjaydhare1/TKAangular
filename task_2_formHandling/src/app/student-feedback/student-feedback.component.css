@@ -1,0 +1,17 @@
+.styled-table {
+  border-collapse: collapse; /* Ensure that borders are shared between rows/cells */
+  width: 100%;
+}
+
+.styled-table, .styled-table th, .styled-table td {
+  border: 1px solid black; /* Border for table, rows, and data cells */
+}
+
+.styled-table th, .styled-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.styled-table th {
+  background-color: #866868; /* Optional: to add some visual style to the header */
+}

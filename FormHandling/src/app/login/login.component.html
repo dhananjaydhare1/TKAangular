@@ -1,0 +1,19 @@
+<div class="a">
+  <h2>1st way Data binding</h2>
+<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+
+  Username :
+   <input type="text" name="suername" ngModel> <br><br>
+   Password : <input type="text" name="password" ngModel> <br><br>
+   <button type="submit">Login</button>
+</form>
+</div>
+
+<div class="b">
+  <h2>2nd way Data binding</h2>
+ <form (ngSubmit)="abc()">
+  Username : <input type="text" name="psername" [(ngModel)]="username"> <br><br>
+  Password : <input type="text" name="password" [(ngModel)]="password"> <br><br>
+  <button type="submit">Login</button>
+ </form>
+</div>

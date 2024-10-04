@@ -1,0 +1,32 @@
+<div>
+  <h2>Student Feedback Form</h2>
+
+  <form (ngSubmit)="onSubmit(feedbackForm)" #feedbackForm="ngForm">
+    <input type="text" placeholder="Student Name" [(ngModel)]="studentName" name="studentName" required> <br><br>
+    <input type="number" placeholder="Batch Number" [(ngModel)]="batchNumber" name="batchNumber" required> <br><br>
+    <textarea placeholder="Feedback" [(ngModel)]="feedbackText" name="feedbackText" required></textarea>
+
+    <button type="submit" >Submit</button>
+  </form>
+
+  <div *ngIf="feedbackList.length > 0">
+    <h3>Submitted Feedback:</h3>
+    <table class="styled-table" style="border: 1px solid black; ">
+      <tr>
+        <th>feedback</th>
+        <th>sname</th>
+        <th>bNomber</th>
+
+      </tr>
+      <tbody *ngFor="let entry of feedbackList">
+        <tr>
+          <td>{{ entry.studentName }}</td>
+
+
+         <td>{{ entry.batchNumber }} </td>
+       <td>{{ entry.feedbackText }}</td> </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`
